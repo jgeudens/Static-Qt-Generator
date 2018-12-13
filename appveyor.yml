@@ -21,7 +21,7 @@ build_script:
   - cmd: cd build
   - cmd: conan install .. -g virtualenv -s os=Windows -s compiler=gcc -s compiler.version=5.3 -s compiler.libcxx=libstdc++11
   
-  - ps: activate.ps1
+  - ps: .\activate.ps1
   
   - ps: cat conanbuildinfo.txt
   - ps: cat conaninfo.txt
@@ -33,10 +33,10 @@ build_script:
   - ps: $env:QTDIR = $env:CMAKE_PREFIX_PATH.Substring(0, $env:CMAKE_PREFIX_PATH.Length-1)
   - ps: Write-Output $env:QTDIR
   
-  - ps: $env:ARCHIVE = Qt_Static_$env:QTVERSION.zip
+  - ps: $env:ARCHIVE = "Qt_Static_$env:QTVERSION.zip"
   - ps: Write-Output $env:ARCHIVE
   
-  - ps: Compress-Archive -Path "$env:QTDIR\" -CompressionLevel Optimal -DestinationPath ".\$env:ARCHIVE"
+  - ps: Compress-Archive -Path "$env:QTDIR\*" -CompressionLevel Optimal -DestinationPath ".\$env:ARCHIVE"
 
 artifacts:
  - path: build\$env:ARCHIVE
