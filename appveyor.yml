@@ -36,7 +36,7 @@ build_script:
   - ps: $env:ARCHIVE = "Qt_Static_$env:QTVERSION.zip"
   - ps: Write-Output $env:ARCHIVE
   
-  - ps: Compress-Archive -Path "$env:QTDIR\*" -CompressionLevel Optimal -DestinationPath ".\$env:ARCHIVE"
+  - cmd: 7z a ".\$env:ARCHIVE" "$env:QTDIR\*"
 
 artifacts:
  - path: build\$(ARCHIVE)
