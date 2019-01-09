@@ -8,5 +8,3 @@
 	Qt:config=-static-runtime
 	Qt:shared=False
 	Qt:qtserialbus=True
-	Qt:openssl=True
-	
