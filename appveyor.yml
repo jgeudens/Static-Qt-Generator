@@ -1,7 +1,7 @@
 version: 1.0.{build}
 
 platform:
-  - x32
+  - x64
 
 install:
   - cmd: echo "Downloading conan..."
@@ -10,6 +10,7 @@ install:
   - cmd: conan --version
   - cmd: conan remote add bincrafters https://api.bintray.com/conan/bincrafters/public-conan || exit 0
   - cmd: set PATH=C:\Qt\Tools\mingw530_32\bin;%PATH%
+  - cmd: set PATH=C:\msys64;%PATH%
   - cmd: echo %PATH%
   
 build_script:
