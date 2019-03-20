@@ -49,7 +49,7 @@ deploy:
     subject: jgeudens
     repo: Static-Qt
     package: Static-Qt-5.9.x
-    version: version
+    version: $env:QTVERSION
     publish: false
     override: true
     explode: false
