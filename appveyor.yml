@@ -41,17 +41,17 @@ build_script:
 artifacts:
   - path: build\$(ARCHIVE)
  
-deploy:
-  - provider: BinTray
-    username: jgeudens
-    api_key:
-      secure: Lfvt9X3IZaqiRZXOEhWQzwPswez/Wv/M6AuRGvGrKcDyWMXtF3LC17CE7PdfRIll
-    subject: jgeudens
-    repo: Static-Qt
-    package: Static-Qt-5.9.x
-    version: $(QTVERSION)
-    publish: false
-    override: true
-    explode: false
+#deploy:
+#  - provider: BinTray
+#    username: jgeudens
+#    api_key:
+#      secure: Lfvt9X3IZaqiRZXOEhWQzwPswez/Wv/M6AuRGvGrKcDyWMXtF3LC17CE7PdfRIll
+#    subject: jgeudens
+#    repo: Static-Qt
+#    package: Static-Qt-5.9.x
+#    version: $(QTVERSION)
+#    publish: false
+#    override: true
+#    explode: false
 
 
