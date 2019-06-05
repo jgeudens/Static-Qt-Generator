@@ -19,7 +19,7 @@ install:
 build_script:
   - cmd: mkdir build
   - cmd: cd build
-  - cmd: conan install .. -g virtualenv -s os=Windows -s compiler=gcc -s compiler.version=5.3 -s compiler.libcxx=libstdc++11 --build missing
+  - cmd: conan install .. -g virtualenv -s os=Windows -s arch=x86 -s compiler=gcc -s compiler.version=5.3 -s compiler.libcxx=libstdc++11 --build missing
   
   - ps: .\activate.ps1
   
