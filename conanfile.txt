@@ -5,7 +5,6 @@
 	qmake
 
 [options]
-	Qt:config=-static-runtime
-	Qt:shared=False
+	Qt:shared=True
 	Qt:qtserialbus=True
 	Qt:openssl=False
