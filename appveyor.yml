@@ -16,6 +16,7 @@ install:
   - cmd: set PATH=C:\Qt\Tools\mingw530_32\bin;%PATH%
   - cmd: set PATH=C:\msys64\usr\bin;%PATH%
   - cmd: echo %PATH%
+  - cmd: g++ -v
   
 build_script:
   - cmd: mkdir build
