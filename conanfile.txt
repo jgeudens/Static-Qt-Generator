@@ -2,10 +2,10 @@
 	qt/5.12.4@bincrafters/stable
 
 [generators]
-	qmake
+	qt
 
 [options]
-	Qt:config=-static-runtime
-	Qt:shared=False
-	Qt:qtserialbus=True
-	Qt:openssl=True
+	qt:config=-static-runtime
+	qt:shared=False
+	qt:qtserialbus=True
+	qt:openssl=True
