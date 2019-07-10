@@ -1,5 +1,5 @@
 [requires]
-	Qt/5.9.7@bincrafters/stable
+	Qt/5.9.8@bincrafters/stable
 
 [generators]
 	qmake
