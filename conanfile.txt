@@ -2,10 +2,11 @@
 	qt/5.12.4@bincrafters/stable
 
 [generators]
-	qt
+	deploy
 
 [options]
 	qt:config=-static-runtime
 	qt:shared=False
 	qt:qtserialbus=True
 	qt:openssl=True
+	qt:with_pq=False
