@@ -18,7 +18,7 @@ install:
 build_script:
   - cmd: mkdir build
   - cmd: cd build
-  - cmd: conan install .. bincrafters/stable -s arch=x86 -s compiler="Visual Studio" -s compiler.version=16 --build missing
+  - cmd: conan install .. -s os=Windows -s arch=x86_64 -s compiler="Visual Studio" -s compiler.runtime=MT -s compiler.version=16 --build missing
   
   - ps: .\activate.ps1
   

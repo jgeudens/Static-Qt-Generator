@@ -1,5 +1,5 @@
 [requires]
-	qt/5.12.4@bincrafters/stable
+	qt/5.13.0@bincrafters/stable
 
 [generators]
 	qmake
@@ -8,4 +8,4 @@
 	Qt:config=-static-runtime
 	Qt:shared=False
 	Qt:qtserialbus=True
-	Qt:openssl=True
+	Qt:openssl=False
