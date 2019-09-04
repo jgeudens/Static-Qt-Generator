@@ -1,5 +1,7 @@
 version: 1.0.{build}
 
+image: Visual Studio 2015
+
 platform:
   - x64
 
@@ -15,7 +17,7 @@ install:
   - cmd: conan remote add bincrafters https://api.bintray.com/conan/bincrafters/public-conan || exit 0
   - cmd: set PATH=C:\Python37;C:\Python37\scripts;%PATH%
   - cmd: set PATH=C:\msys64\usr\bin;%PATH%
-  - cmd: set PATH=C:\mingw-w64\x86_64-7.3.0-posix-seh-rt_v5-rev0;%PATH%
+  - cmd: set PATH=C:\mingw-w64\x86_64-7.3.0-posix-seh-rt_v5-rev0\bin;%PATH%
   - cmd: echo %PATH%
   - cmd: g++ -v
   - cmd: gcc -v
