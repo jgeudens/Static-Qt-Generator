@@ -1,5 +1,5 @@
 [requires]
-	qt/5.12.4@bincrafters/stable
+	qt/5.12.6@bincrafters/stable
 
 [generators]
 	deploy
@@ -8,5 +8,5 @@
 	qt:config=-static-runtime
 	qt:shared=False
 	qt:qtserialbus=True
-	qt:openssl=True
+	qt:openssl=False
 	qt:with_pq=False
